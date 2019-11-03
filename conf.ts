@@ -35,7 +35,7 @@ exports.config = {
   // before all test suites
   onPrepare: function () {
     browser.driver.manage().window().maximize();
-
+    browser.waitForAngularEnabled(false),
     // adding a wait before test cases.
     browser.manage().timeouts().implicitlyWait(5000);
 
